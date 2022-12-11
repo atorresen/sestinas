@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>about sestinas</title>
+
+  <link rel="icon" href="images/icon.ico">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans" rel="stylesheet">
+
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>about sestinas</h1>
+  <button class="homebutton"><a href="index.html">home</a></button>
+
+  <img style="width: 100%; margin-top: 2.5%;" src="images/verticalStripes.png" alt="">
+
+  <p class="about">
+    A sestina is a 39-line poem composed of six 6-lined stanzas and a final 3-lined stanza (called the "envoi").
+  </p>
+  <p class="about">
+    The end words of the lines in each of the first six stanzas are permutations of the same 6 words in an order determined by taking the end word of final line of the previous stanza, then the end word of the first line of the previous stanza, then
+    the end word of the second-to-last line of the previous
+    stanza, then the end word of the second line of the previous stanza, and so on.
+    Probably easier to show that in a diagram:            
+  </p>
+
+  <br>
+  <figure>
+    <img id="sestina_system" src="https://upload.wikimedia.org/wikipedia/commons/7/72/Sestina_system_alt.svg" alt="https://en.wikipedia.org/wiki/Sestina#/media/File:Sestina_system_alt.svg">
+    <figcaption><a href="https://commons.wikimedia.org/w/index.php?curid=19446455">Sestina system, from Wikimedia Commons</a></figcaption>
+  </figure>
+
+  <p class="about">
+    The envoi is then built of three lines that each contain two of the six sestina words, also in a prescribed order.
+    While not completely clear if there is a single established convention for the ordering of the words in the envoi, I have chosen to follow the order of (6,5), (2,4), (3,1).
+  </p>
+  <p class="about">
+    I learned about sestinas from a workshop at the 2012 Columbia Scholastic Press Association Spring Convention.
+  </p>
+
+  <p class="about">
+    In 2015, I had a desk job with lots of down time, so I gradually filled a notebook with sestinas.
+  </p>
+
+  <p class="about">
+    In 2020, I started teaching myself HTML and have been working on this website since then.
+  </p>
+
+  <br><br><br>
+
+  <!-- stripes -->
+  <div>
+
+    <p class="stripep l1"> 1 </p>
+    <p class="stripep l2"> 2 </p>
+    <p class="stripep l3"> 3 </p>
+    <p class="stripep l4"> 4 </p>
+    <p class="stripep l5"> 5 </p>
+    <p class="stripep l6"> 6 </p>
+
+    <hr class="stripehr">
+
+    <p class="stripep l6"> 6 </p>
+    <p class="stripep l1"> 1 </p>
+    <p class="stripep l5"> 5 </p>
+    <p class="stripep l2"> 2 </p>
+    <p class="stripep l4"> 4 </p>
+    <p class="stripep l3"> 3 </p>
+
+    <hr class="stripehr">
+
+    <p class="stripep l3"> 3 </p>
+    <p class="stripep l6"> 6 </p>
+    <p class="stripep l4"> 4 </p>
+    <p class="stripep l1"> 1 </p>
+    <p class="stripep l2"> 2 </p>
+    <p class="stripep l5"> 5 </p>
+
+    <hr class="stripehr">
+
+    <p class="stripep l5"> 5 </p>
+    <p class="stripep l3"> 3 </p>
+    <p class="stripep l2"> 2 </p>
+    <p class="stripep l6"> 6 </p>
+    <p class="stripep l1"> 1 </p>
+    <p class="stripep l4"> 4 </p>
+
+    <hr class="stripehr">
+
+    <p class="stripep l4"> 4 </p>
+    <p class="stripep l5"> 5 </p>
+    <p class="stripep l1"> 1 </p>
+    <p class="stripep l3"> 3 </p>
+    <p class="stripep l6"> 6 </p>
+    <p class="stripep l2"> 2 </p>
+
+    <hr class="stripehr">
+
+    <p class="stripep l2"> 2 </p>
+    <p class="stripep l4"> 4 </p>
+    <p class="stripep l6"> 6 </p>
+    <p class="stripep l5"> 5 </p>
+    <p class="stripep l3"> 3 </p>
+    <p class="stripep l1"> 1 </p>
+
+    <hr class="stripehr">
+
+    <p class="stripep l6" style="background-image: linear-gradient(to right, var(--l6), var(--l5))"> 6-5 </p>
+    <p class="stripep l2" style="background-image: linear-gradient(to right, var(--l2), var(--l4))"> 2-4 </p>
+    <p class="stripep l3" style="background-image: linear-gradient(to right, var(--l3), var(--l1))"> 3-1 </p>
+
+  </div>
+
+  <br><br><br>
+
+</body>
+
+</html>

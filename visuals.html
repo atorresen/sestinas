@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>sestina visualizations</title>
+
+  <link rel="icon" href="images/icon.ico">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans" rel="stylesheet">
+
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>sestina visualizations</h1>
+  <button class="homebutton"><a href="index.html">home</a></button>
+  <button><a href="code.html">code</a></button>
+
+
+  <!-- color family selector -->
+  <table>
+    <tr>
+      <td>
+        <h3>color family:</h3>
+      </td>
+      <td>
+        <form method="post">
+          <select class="colorDropdown" name="dropdown" onchange="changeColor(this)">
+            <option class="coloOpt" value="default"></option>
+            <option class="coloOpt" value="red">red</option>
+            <option value="orange">orange</option>
+            <option value="yellow">yellow</option>
+            <option value="yellow-green">yellow-green</option>
+            <option value="green">green</option>
+            <option value="cyan">cyan</option>
+            <option value="blue">blue</option>
+            <option value="magenta">magenta</option>
+            <option value="hot pink">hot pink</option>
+            <option value="light pink">light pink</option>
+            <option value="multi dark">multi dark</option>
+            <option value="multi light">multi light</option>
+          </select>
+        </form>
+      </td>
+    </tr>
+  </table>
+
+
+  <!-- defining gradients for envoi -->
+  <svg height="0" width="0">
+    <defs>
+      <linearGradient id="linearGradient65">
+        <stop class="l6g" ; offset="0"/>
+        <stop class="l5g" ; offset="1"/>
+      </linearGradient>
+
+      <linearGradient id="linearGradient24">
+        <stop class="l2g" ; offset="0"/>
+        <stop class="l4g" ; offset="1"/>
+      </linearGradient>
+
+      <linearGradient id="linearGradient31">
+        <stop class="l3g" ; offset="0"/>
+        <stop class="l1g" ; offset="1"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+
+  <div class="visualsDiv">
+    <!-- 6-petaled flowers (6) -->
+    <svg class="flower" viewBox="0 0 200 200">
+      <path class="l1" d="M100,100 	q50,-25 	100,0 		q-50,25 	-100,0"/>
+      <path class="l2" d="M100,100 	q46.7,-30.8	50,-86.6 	q-46.7,30.8 	-50,86.6"/>
+      <path class="l3" d="M100,100 	q-46.7,-30.8	-50,-86.6 	q46.7,30.8 	50,86.6"/>
+      <path class="l4" d="M100,100 	q-50,25 	-100,0 		q50,-25 	100,0"/>
+      <path class="l5" d="M100,100 	q-46.7,30.8	-50,86.6	q46.7,-30.8 	50,-86.6"/>
+      <path class="l6" d="M100,100 	q46.7,30.8	50,86.6 	q-46.7,-30.8 	-50,-86.6"/>
+    </svg>
+
+    <svg class="flower" viewBox="0 0 200 200">
+      <path class="l6" d="M100,100 	q50,-25 	100,0 		q-50,25 	-100,0"/>
+      <path class="l1" d="M100,100 	q46.7,-30.8	50,-86.6 	q-46.7,30.8 	-50,86.6"/>
+      <path class="l5" d="M100,100 	q-46.7,-30.8	-50,-86.6 	q46.7,30.8 	50,86.6"/>
+      <path class="l2" d="M100,100 	q-50,25 	-100,0 		q50,-25 	100,0"/>
+      <path class="l4" d="M100,100 	q-46.7,30.8	-50,86.6	q46.7,-30.8 	50,-86.6"/>
+      <path class="l3" d="M100,100 	q46.7,30.8	50,86.6 	q-46.7,-30.8 	-50,-86.6"/>
+    </svg>
+
+    <svg class="flower" viewBox="0 0 200 200">
+      <path class="l3" d="M100,100 	q50,-25 	100,0 		q-50,25 	-100,0"/>
+      <path class="l6" d="M100,100 	q46.7,-30.8	50,-86.6 	q-46.7,30.8 	-50,86.6"/>
+      <path class="l4" d="M100,100 	q-46.7,-30.8	-50,-86.6 	q46.7,30.8 	50,86.6"/>
+      <path class="l1" d="M100,100 	q-50,25 	-100,0 		q50,-25 	100,0"/>
+      <path class="l2" d="M100,100 	q-46.7,30.8	-50,86.6	q46.7,-30.8 	50,-86.6"/>
+      <path class="l5" d="M100,100 	q46.7,30.8	50,86.6 	q-46.7,-30.8 	-50,-86.6"/>
+    </svg>
+
+    <svg class="flower" viewBox="0 0 200 200">
+      <path class="l5" d="M100,100 	q50,-25 	100,0 		q-50,25 	-100,0"/>
+      <path class="l3" d="M100,100 	q46.7,-30.8	50,-86.6 	q-46.7,30.8 	-50,86.6"/>
+      <path class="l2" d="M100,100 	q-46.7,-30.8	-50,-86.6 	q46.7,30.8 	50,86.6"/>
+      <path class="l6" d="M100,100 	q-50,25 	-100,0 		q50,-25 	100,0"/>
+      <path class="l1" d="M100,100 	q-46.7,30.8	-50,86.6	q46.7,-30.8 	50,-86.6"/>
+      <path class="l4" d="M100,100 	q46.7,30.8	50,86.6 	q-46.7,-30.8 	-50,-86.6"/>
+    </svg>
+
+    <svg class="flower" viewBox="0 0 200 200">
+      <path class="l4" d="M100,100 	q50,-25 	100,0 		q-50,25 	-100,0"/>
+      <path class="l5" d="M100,100 	q46.7,-30.8	50,-86.6 	q-46.7,30.8 	-50,86.6"/>
+      <path class="l1" d="M100,100 	q-46.7,-30.8	-50,-86.6 	q46.7,30.8 	50,86.6"/>
+      <path class="l3" d="M100,100 	q-50,25 	-100,0 		q50,-25 	100,0"/>
+      <path class="l6" d="M100,100 	q-46.7,30.8	-50,86.6	q46.7,-30.8 	50,-86.6"/>
+      <path class="l2" d="M100,100 	q46.7,30.8	50,86.6 	q-46.7,-30.8 	-50,-86.6"/>
+    </svg>
+
+    <svg class="flower" viewBox="0 0 200 200">
+      <path class="l2" d="M100,100 	q50,-25 	100,0 		q-50,25 	-100,0"/>
+      <path class="l4" d="M100,100 	q46.7,-30.8	50,-86.6 	q-46.7,30.8 	-50,86.6"/>
+      <path class="l6" d="M100,100 	q-46.7,-30.8	-50,-86.6 	q46.7,30.8 	50,86.6"/>
+      <path class="l5" d="M100,100 	q-50,25 	-100,0 		q50,-25 	100,0"/>
+      <path class="l3" d="M100,100 	q-46.7,30.8	-50,86.6	q46.7,-30.8 	50,-86.6"/>
+      <path class="l1" d="M100,100 	q46.7,30.8	50,86.6 	q-46.7,-30.8 	-50,-86.6"/>
+    </svg>
+
+    <!-- 3-petaled flower for envoi -->
+    <svg class="flower" viewBox="0 0 200 200">
+      <path style="fill:url(#linearGradient65)" d="M100,100 	q50,-25 	100,0 		q-50,25 	-100,0"/>
+      <path style="fill:url(#linearGradient24)" d="M100,100 	q-46.7,-30.8	-50,-86.6 	q46.7,30.8 	50,86.6"/>
+      <path style="fill:url(#linearGradient31)" d="M100,100 	q-46.7,30.8	-50,86.6	q46.7,-30.8 	50,-86.6"/>
+    </svg>
+
+
+    <br><br><br>
+
+
+    <!-- stellated dodecahedrons (6) -->
+    <svg class="dodec" viewBox="-200 -200 400 400">
+      <!-- front star -->
+      <path class="l1" d="M-32,46 L0,145 L32,46 Z"/>
+      <path class="l1" d="M32,46 L132,46 L51,-16 Z"/>
+      <path class="l1" d="M51,-16 L83,-113 L0,-52 Z"/>
+      <path class="l1" d="M0,-52 L-83,-113 L-51,-16 Z"/>
+      <path class="l1" d="M-51,-16 L-132,46 L-32,46 Z"/>
+      <!-- top star -->
+      <path class="l2" d="M0,0 L32,46 L-32,46 Z"/>
+      <path class="l2" d="M-32,46 L-132,46 L-52,72 Z"/>
+      <path class="l2" d="M-52,72 L-83,115 L-32,100 Z"/>
+      <path class="l2" d="M32,100 L83,115 L52,72 Z"/>
+      <path class="l2" d="M52,72 L132,46 L32,46 Z"/>
+      <!-- top side -->
+      <path class="l3" d="M0,0 L51,-16 L32,46 Z"/>
+      <path class="l3" d="M32,46 L0,145 L52,72 Z"/>
+      <path class="l3" d="M52,72 L83,115 L82,62 Z"/>
+      <path class="l3" d="M100,0 L135,-44 L83,-27 Z"/>
+      <path class="l3" d="M83,-27 L83,-113 L51,-16 Z"/>
+      <!-- bottom side -->
+      <path class="l4" d="M0,0 L51,-16 L0,-52 Z"/>
+      <path class="l4" d="M0,-52 L-83,-113 L0,-88 Z"/>
+      <path class="l4" d="M0,-88 L0,-142 L32,-97.5 Z"/>
+      <path class="l4" d="M83,-59 L135,-44 L83,-27 Z"/>
+      <path class="l4" d="M83,-27 L132,46 L51,-16 Z"/>
+      <!-- reflect top side across y-axis -->
+      <path class="l5" d="M0,0 L-51,-16 L-32,46 Z"/>
+      <path class="l5" d="M-32,46 L-0,145 L-52,72 Z"/>
+      <path class="l5" d="M-52,72 L-83,115 L-82,62 Z"/>
+      <path class="l5" d="M-100,0 L-135,-44 L-83,-27 Z"/>
+      <path class="l5" d="M-83,-27 L-83,-113 L-51,-16 Z"/>
+      <!-- reflect bottom side across y-axis -->
+      <path class="l6" d="M0,0 L-51,-16 L0,-52 Z"/>
+      <path class="l6" d="M0,-52 L83,-113 L0,-88 Z"/>
+      <path class="l6" d="M0,-88 L0,-142 L-32,-97.5 Z"/>
+      <path class="l6" d="M-83,-59 L-135,-44 L-83,-27 Z"/>
+      <path class="l6" d="M-83,-27 L-132,46 L-51,-16 Z"/>
+    </svg>
+
+    <svg class="dodec" viewBox="-200 -200 400 400">
+      <!-- front star -->
+      <path class="l6" d="M-32,46 L0,145 L32,46 Z"/>
+      <path class="l6" d="M32,46 L132,46 L51,-16 Z"/>
+      <path class="l6" d="M51,-16 L83,-113 L0,-52 Z"/>
+      <path class="l6" d="M0,-52 L-83,-113 L-51,-16 Z"/>
+      <path class="l6" d="M-51,-16 L-132,46 L-32,46 Z"/>
+      <!-- top star -->
+      <path class="l1" d="M0,0 L32,46 L-32,46 Z"/>
+      <path class="l1" d="M-32,46 L-132,46 L-52,72 Z"/>
+      <path class="l1" d="M-52,72 L-83,115 L-32,100 Z"/>
+      <path class="l1" d="M32,100 L83,115 L52,72 Z"/>
+      <path class="l1" d="M52,72 L132,46 L32,46 Z"/>
+      <!-- top side -->
+      <path class="l5" d="M0,0 L51,-16 L32,46 Z"/>
+      <path class="l5" d="M32,46 L0,145 L52,72 Z"/>
+      <path class="l5" d="M52,72 L83,115 L82,62 Z"/>
+      <path class="l5" d="M100,0 L135,-44 L83,-27 Z"/>
+      <path class="l5" d="M83,-27 L83,-113 L51,-16 Z"/>
+      <!-- bottom side -->
+      <path class="l2" d="M0,0 L51,-16 L0,-52 Z"/>
+      <path class="l2" d="M0,-52 L-83,-113 L0,-88 Z"/>
+      <path class="l2" d="M0,-88 L0,-142 L32,-97.5 Z"/>
+      <path class="l2" d="M83,-59 L135,-44 L83,-27 Z"/>
+      <path class="l2" d="M83,-27 L132,46 L51,-16 Z"/>
+      <!-- reflect top side across y-axis -->
+      <path class="l3" d="M0,0 L-51,-16 L-32,46 Z"/>
+      <path class="l3" d="M-32,46 L-0,145 L-52,72 Z"/>
+      <path class="l3" d="M-52,72 L-83,115 L-82,62 Z"/>
+      <path class="l3" d="M-100,0 L-135,-44 L-83,-27 Z"/>
+      <path class="l3" d="M-83,-27 L-83,-113 L-51,-16 Z"/>
+      <!-- reflect bottom side across y-axis -->
+      <path class="l4" d="M0,0 L-51,-16 L0,-52 Z"/>
+      <path class="l4" d="M0,-52 L83,-113 L0,-88 Z"/>
+      <path class="l4" d="M0,-88 L0,-142 L-32,-97.5 Z"/>
+      <path class="l4" d="M-83,-59 L-135,-44 L-83,-27 Z"/>
+      <path class="l4" d="M-83,-27 L-132,46 L-51,-16 Z"/>
+    </svg>
+
+    <svg class="dodec" viewBox="-200 -200 400 400">
+      <!-- front star -->
+      <path class="l4" d="M-32,46 L0,145 L32,46 Z"/>
+      <path class="l4" d="M32,46 L132,46 L51,-16 Z"/>
+      <path class="l4" d="M51,-16 L83,-113 L0,-52 Z"/>
+      <path class="l4" d="M0,-52 L-83,-113 L-51,-16 Z"/>
+      <path class="l4" d="M-51,-16 L-132,46 L-32,46 Z"/>
+      <!-- top star -->
+      <path class="l6" d="M0,0 L32,46 L-32,46 Z"/>
+      <path class="l6" d="M-32,46 L-132,46 L-52,72 Z"/>
+      <path class="l6" d="M-52,72 L-83,115 L-32,100 Z"/>
+      <path class="l6" d="M32,100 L83,115 L52,72 Z"/>
+      <path class="l6" d="M52,72 L132,46 L32,46 Z"/>
+      <!-- top side -->
+      <path class="l3" d="M0,0 L51,-16 L32,46 Z"/>
+      <path class="l3" d="M32,46 L0,145 L52,72 Z"/>
+      <path class="l3" d="M52,72 L83,115 L82,62 Z"/>
+      <path class="l3" d="M100,0 L135,-44 L83,-27 Z"/>
+      <path class="l3" d="M83,-27 L83,-113 L51,-16 Z"/>
+      <!-- bottom side -->
+      <path class="l1" d="M0,0 L51,-16 L0,-52 Z"/>
+      <path class="l1" d="M0,-52 L-83,-113 L0,-88 Z"/>
+      <path class="l1" d="M0,-88 L0,-142 L32,-97.5 Z"/>
+      <path class="l1" d="M83,-59 L135,-44 L83,-27 Z"/>
+      <path class="l1" d="M83,-27 L132,46 L51,-16 Z"/>
+      <!-- reflect top side across y-axis -->
+      <path class="l2" d="M0,0 L-51,-16 L-32,46 Z"/>
+      <path class="l2" d="M-32,46 L-0,145 L-52,72 Z"/>
+      <path class="l2" d="M-52,72 L-83,115 L-82,62 Z"/>
+      <path class="l2" d="M-100,0 L-135,-44 L-83,-27 Z"/>
+      <path class="l2" d="M-83,-27 L-83,-113 L-51,-16 Z"/>
+      <!-- reflect bottom side across y-axis -->
+      <path class="l5" d="M0,0 L-51,-16 L0,-52 Z"/>
+      <path class="l5" d="M0,-52 L83,-113 L0,-88 Z"/>
+      <path class="l5" d="M0,-88 L0,-142 L-32,-97.5 Z"/>
+      <path class="l5" d="M-83,-59 L-135,-44 L-83,-27 Z"/>
+      <path class="l5" d="M-83,-27 L-132,46 L-51,-16 Z"/>
+    </svg>
+
+    <svg class="dodec" viewBox="-200 -200 400 400">
+      <!-- front star -->
+      <path class="l5" d="M-32,46 L0,145 L32,46 Z"/>
+      <path class="l5" d="M32,46 L132,46 L51,-16 Z"/>
+      <path class="l5" d="M51,-16 L83,-113 L0,-52 Z"/>
+      <path class="l5" d="M0,-52 L-83,-113 L-51,-16 Z"/>
+      <path class="l5" d="M-51,-16 L-132,46 L-32,46 Z"/>
+      <!-- top star -->
+      <path class="l4" d="M0,0 L32,46 L-32,46 Z"/>
+      <path class="l4" d="M-32,46 L-132,46 L-52,72 Z"/>
+      <path class="l4" d="M-52,72 L-83,115 L-32,100 Z"/>
+      <path class="l4" d="M32,100 L83,115 L52,72 Z"/>
+      <path class="l4" d="M52,72 L132,46 L32,46 Z"/>
+      <!-- top side -->
+      <path class="l2" d="M0,0 L51,-16 L32,46 Z"/>
+      <path class="l2" d="M32,46 L0,145 L52,72 Z"/>
+      <path class="l2" d="M52,72 L83,115 L82,62 Z"/>
+      <path class="l2" d="M100,0 L135,-44 L83,-27 Z"/>
+      <path class="l2" d="M83,-27 L83,-113 L51,-16 Z"/>
+      <!-- bottom side -->
+      <path class="l6" d="M0,0 L51,-16 L0,-52 Z"/>
+      <path class="l6" d="M0,-52 L-83,-113 L0,-88 Z"/>
+      <path class="l6" d="M0,-88 L0,-142 L32,-97.5 Z"/>
+      <path class="l6" d="M83,-59 L135,-44 L83,-27 Z"/>
+      <path class="l6" d="M83,-27 L132,46 L51,-16 Z"/>
+      <!-- reflect top side across y-axis -->
+      <path class="l1" d="M0,0 L-51,-16 L-32,46 Z"/>
+      <path class="l1" d="M-32,46 L-0,145 L-52,72 Z"/>
+      <path class="l1" d="M-52,72 L-83,115 L-82,62 Z"/>
+      <path class="l1" d="M-100,0 L-135,-44 L-83,-27 Z"/>
+      <path class="l1" d="M-83,-27 L-83,-113 L-51,-16 Z"/>
+      <!-- reflect bottom side across y-axis -->
+      <path class="l3" d="M0,0 L-51,-16 L0,-52 Z"/>
+      <path class="l3" d="M0,-52 L83,-113 L0,-88 Z"/>
+      <path class="l3" d="M0,-88 L0,-142 L-32,-97.5 Z"/>
+      <path class="l3" d="M-83,-59 L-135,-44 L-83,-27 Z"/>
+      <path class="l3" d="M-83,-27 L-132,46 L-51,-16 Z"/>
+    </svg>
+
+    <svg class="dodec" viewBox="-200 -200 400 400">
+      <!-- front star -->
+      <path class="l3" d="M-32,46 L0,145 L32,46 Z"/>
+      <path class="l3" d="M32,46 L132,46 L51,-16 Z"/>
+      <path class="l3" d="M51,-16 L83,-113 L0,-52 Z"/>
+      <path class="l3" d="M0,-52 L-83,-113 L-51,-16 Z"/>
+      <path class="l3" d="M-51,-16 L-132,46 L-32,46 Z"/>
+      <!-- top star -->
+      <path class="l5" d="M0,0 L32,46 L-32,46 Z"/>
+      <path class="l5" d="M-32,46 L-132,46 L-52,72 Z"/>
+      <path class="l5" d="M-52,72 L-83,115 L-32,100 Z"/>
+      <path class="l5" d="M32,100 L83,115 L52,72 Z"/>
+      <path class="l5" d="M52,72 L132,46 L32,46 Z"/>
+      <!-- top side -->
+      <path class="l1" d="M0,0 L51,-16 L32,46 Z"/>
+      <path class="l1" d="M32,46 L0,145 L52,72 Z"/>
+      <path class="l1" d="M52,72 L83,115 L82,62 Z"/>
+      <path class="l1" d="M100,0 L135,-44 L83,-27 Z"/>
+      <path class="l1" d="M83,-27 L83,-113 L51,-16 Z"/>
+      <!-- bottom side -->
+      <path class="l4" d="M0,0 L51,-16 L0,-52 Z"/>
+      <path class="l4" d="M0,-52 L-83,-113 L0,-88 Z"/>
+      <path class="l4" d="M0,-88 L0,-142 L32,-97.5 Z"/>
+      <path class="l4" d="M83,-59 L135,-44 L83,-27 Z"/>
+      <path class="l4" d="M83,-27 L132,46 L51,-16 Z"/>
+      <!-- reflect top side across y-axis -->
+      <path class="l6" d="M0,0 L-51,-16 L-32,46 Z"/>
+      <path class="l6" d="M-32,46 L-0,145 L-52,72 Z"/>
+      <path class="l6" d="M-52,72 L-83,115 L-82,62 Z"/>
+      <path class="l6" d="M-100,0 L-135,-44 L-83,-27 Z"/>
+      <path class="l6" d="M-83,-27 L-83,-113 L-51,-16 Z"/>
+      <!-- reflect bottom side across y-axis -->
+      <path class="l2" d="M0,0 L-51,-16 L0,-52 Z"/>
+      <path class="l2" d="M0,-52 L83,-113 L0,-88 Z"/>
+      <path class="l2" d="M0,-88 L0,-142 L-32,-97.5 Z"/>
+      <path class="l2" d="M-83,-59 L-135,-44 L-83,-27 Z"/>
+      <path class="l2" d="M-83,-27 L-132,46 L-51,-16 Z"/>
+    </svg>
+
+    <svg class="dodec" viewBox="-200 -200 400 400">
+      <!-- front star -->
+      <path class="l2" d="M-32,46 L0,145 L32,46 Z"/>
+      <path class="l2" d="M32,46 L132,46 L51,-16 Z"/>
+      <path class="l2" d="M51,-16 L83,-113 L0,-52 Z"/>
+      <path class="l2" d="M0,-52 L-83,-113 L-51,-16 Z"/>
+      <path class="l2" d="M-51,-16 L-132,46 L-32,46 Z"/>
+      <!-- top star -->
+      <path class="l3" d="M0,0 L32,46 L-32,46 Z"/>
+      <path class="l3" d="M-32,46 L-132,46 L-52,72 Z"/>
+      <path class="l3" d="M-52,72 L-83,115 L-32,100 Z"/>
+      <path class="l3" d="M32,100 L83,115 L52,72 Z"/>
+      <path class="l3" d="M52,72 L132,46 L32,46 Z"/>
+      <!-- top side -->
+      <path class="l6" d="M0,0 L51,-16 L32,46 Z"/>
+      <path class="l6" d="M32,46 L0,145 L52,72 Z"/>
+      <path class="l6" d="M52,72 L83,115 L82,62 Z"/>
+      <path class="l6" d="M100,0 L135,-44 L83,-27 Z"/>
+      <path class="l6" d="M83,-27 L83,-113 L51,-16 Z"/>
+      <!-- bottom side -->
+      <path class="l5" d="M0,0 L51,-16 L0,-52 Z"/>
+      <path class="l5" d="M0,-52 L-83,-113 L0,-88 Z"/>
+      <path class="l5" d="M0,-88 L0,-142 L32,-97.5 Z"/>
+      <path class="l5" d="M83,-59 L135,-44 L83,-27 Z"/>
+      <path class="l5" d="M83,-27 L132,46 L51,-16 Z"/>
+      <!-- reflect top side across y-axis -->
+      <path class="l4" d="M0,0 L-51,-16 L-32,46 Z"/>
+      <path class="l4" d="M-32,46 L-0,145 L-52,72 Z"/>
+      <path class="l4" d="M-52,72 L-83,115 L-82,62 Z"/>
+      <path class="l4" d="M-100,0 L-135,-44 L-83,-27 Z"/>
+      <path class="l4" d="M-83,-27 L-83,-113 L-51,-16 Z"/>
+      <!-- reflect bottom side across y-axis -->
+      <path class="l1" d="M0,0 L-51,-16 L0,-52 Z"/>
+      <path class="l1" d="M0,-52 L83,-113 L0,-88 Z"/>
+      <path class="l1" d="M0,-88 L0,-142 L-32,-97.5 Z"/>
+      <path class="l1" d="M-83,-59 L-135,-44 L-83,-27 Z"/>
+      <path class="l1" d="M-83,-27 L-132,46 L-51,-16 Z"/>
+    </svg>
+
+    <!-- cube for envoi -->
+    <svg class="cube" viewBox="-100 -100 200 200">
+      <!-- top -->
+      <path style="fill:url(#linearGradient65)" d="M0,0 L60,20 L0,40 L-60,20 Z"/>
+      <!-- sides -->
+      <path style="fill:url(#linearGradient24)" d="M0,0 L60,20 L60,-63 L0,-85 Z"/>
+      <path style="fill:url(#linearGradient31)" d="M0,0 L-60,20 L-60,-63 L0,-85 Z"/>
+    </svg>
+  </div>
+
+  <hr>
+
+  <p class="about">
+    These images (a flower and a stellated dodecahedron) are each created with 6 colors, each of which correspond to an end-word of a sestina.
+    The arrangement of the colors in each image matches the arrangement of sestina end words.
+    For example, the first and second stanzas of a sestina end with the words 1-2-3-4-5-6 and 6-1-5-2-4-3, respecitvely.
+    This permutation of the digits 1-6 matches the permutation of colors of the petals in the first and second flowers (and similary for visible faces of the dodecahedron):
+  </p>
+
+  <br>
+
+  <svg class="flower" viewBox="0 0 200 200">
+    <path class="l1" d="M100,100 	q50,-25 	100,0 		q-50,25 	-100,0"></path>
+    <text class="svglbl" x="150" y="105" text-anchor="middle">1</text>
+    <path class="l2" d="M100,100 	q46.7,-30.8	50,-86.6 	q-46.7,30.8 	-50,86.6"/>
+    <text class="svglbl" x="125" y="60" text-anchor="middle">2</text>
+    <path class="l3" d="M100,100 	q-46.7,-30.8	-50,-86.6 	q46.7,30.8 	50,86.6"/>
+    <text class="svglbl" x="75" y="60" text-anchor="middle">3</text>
+    <path class="l4" d="M100,100 	q-50,25 	-100,0 		q50,-25 	100,0"/>
+    <text class="svglbl" x="50" y="105" text-anchor="middle">4</text>
+    <path class="l5" d="M100,100 	q-46.7,30.8	-50,86.6	q46.7,-30.8 	50,-86.6"/>
+    <text class="svglbl" x="125" y="150" text-anchor="middle">5</text>
+    <path class="l6" d="M100,100 	q46.7,30.8	50,86.6 	q-46.7,-30.8 	-50,-86.6"/>
+    <text class="svglbl" x="75" y="150" text-anchor="middle">6</text>
+  </svg>
+
+  <svg class="flower" viewBox="0 0 200 200">
+    <path class="l6" d="M100,100 	q50,-25 	100,0 		q-50,25 	-100,0"></path>
+    <text class="svglbl" x="150" y="105" text-anchor="middle">6</text>
+    <path class="l1" d="M100,100 	q46.7,-30.8	50,-86.6 	q-46.7,30.8 	-50,86.6"/>
+    <text class="svglbl" x="125" y="60" text-anchor="middle">1</text>
+    <path class="l5" d="M100,100 	q-46.7,-30.8	-50,-86.6 	q46.7,30.8 	50,86.6"/>
+    <text class="svglbl" x="75" y="60" text-anchor="middle">5</text>
+    <path class="l2" d="M100,100 	q-50,25 	-100,0 		q50,-25 	100,0"/>
+    <text class="svglbl" x="50" y="105" text-anchor="middle">2</text>
+    <path class="l3" d="M100,100 	q-46.7,30.8	-50,86.6	q46.7,-30.8 	50,-86.6"/>
+    <text class="svglbl" x="125" y="150" text-anchor="middle">4</text>
+    <path class="l4" d="M100,100 	q46.7,30.8	50,86.6 	q-46.7,-30.8 	-50,-86.6"/>
+    <text class="svglbl" x="75" y="150" text-anchor="middle">3</text>
+  </svg>
+
+  <p class="about">
+    The color families are created by using the line indices as the characters of hex color names. For example, the "multi dark" color family corresponds to the hex color codes
+  </p>
+  <p>
+    <span style="padding: 0 5px; color: white; background-color: #123456">#123456</span>,
+    <span style="padding: 0 5px; color: white; background-color: #615243">#615243</span>,
+    <span style="padding: 0 5px; color: white; background-color: #364123">#364123</span>,
+    <span style="padding: 0 5px; color: white; background-color: #532614">#532614</span>,
+    <span style="padding: 0 5px; color: white; background-color: #451362">#451362</span>,
+    <span style="padding: 0 5px; color: white; background-color: #246531">#246531</span>.
+    <!-- "#123456", "#615243", "#364123", "#532614", "#451362", "#246531" -->
+  </p>
+  <p class="about" style="top-margin: 0">
+    To create different color families, I selectively increased digits in different positions by a fixed amount.
+    For example, to create the red color family, I increased the first character (in the first "red" position of the hex color code) by 10 units (equivalent to converting the digit to the character in the alphabet with that index) to get
+  </p>
+  <p>
+    <span style="padding: 0 5px; color: white; background-color: #a23456">#a23456</span>,
+    <span style="padding: 0 5px; color: white; background-color: #f15243">#f15243</span>,
+    <span style="padding: 0 5px; color: white; background-color: #c64123">#c64123</span>,
+    <span style="padding: 0 5px; color: white; background-color: #e32614">#e32614</span>,
+    <span style="padding: 0 5px; color: white; background-color: #d51362">#d51362</span>,
+    <span style="padding: 0 5px; color: white; background-color: #b46531">#b46531</span>.
+    <!-- "#a23456", "#f15243", "c364123", "#e32614", "#d51362", "#b46531" -->
+  </p>
+  <p class="about">
+    The available color families result from applying this process in different combinations of positions in the hex color codes and also from adjusting the colors' transparencies.
+  </p>
+  <p class="about">
+    To see the code from an early iteration of the sestina visualizations, click the <a href="code.html">[code]</a> button.
+  </p>
+  <p class="about">
+    For more information about the structure of sestinas, see the <a href="about.html">[about]</a> page.
+  </p>
+
+  <br><br><br><br><br>
+
+  <script src="index.js" type="text/javascript"></script>
+
+</body>
+
+</html>

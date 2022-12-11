@@ -1,0 +1,201 @@
+body {
+  background-color: #fffafa;
+  font-family: "Noto Sans", "Tahoma", sans-serif;
+  line-height: 1.4;
+  text-align: center;
+}
+
+h1 {
+  color: #e2e2e2;
+  font-size: 4rem;
+}
+
+h2 {
+  color: #d2d2d2;
+  font-size: 2rem;
+}
+
+h3 {
+  color: #d2d2d2;
+  font-size: 1.5rem;
+  font-family: monospace;
+  margin: 1%;
+}
+
+a {
+  color: #524578;
+}
+
+title {
+  visibility: visible;
+  color: black;
+}
+
+/********** text styles **********/
+
+.about {
+  margin: 5% 18% 0 18%
+}
+
+.codesample {
+  text-align: left;
+}
+
+.svglbl {
+  color: #524578;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+/********** buttons **********/
+
+button {
+  background-color: #eee7e7;
+  background-size: 150px;
+  border: solid #dec7c7;
+  border-width: 4px;
+  margin: 30px;
+  cursor: pointer;
+}
+
+button a {
+  font-family: monospace;
+  font-size: 1rem;
+  color: #525252;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover {
+  border: solid #f8cfcf;
+  border-width: 4px;
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  margin: 30px;
+  cursor: pointer;
+}
+
+.pressed {
+  box-shadow: 0 4px 6px 0 #a2a2a2;
+  color: #a2a2a2;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.homebutton:hover {
+  background-color: #dec7c7;
+  border: 4px solid #d4d4d4;
+  cursor: pointer;
+}
+
+.homebutton:pressed {
+  box-shadow: 0 0;
+  cursor: pointer;
+}
+
+
+/********** visualizations **********/
+
+/* default colors */
+
+:root {
+  --l1: #ff123456;
+  --l2: #ff615243;
+  --l3: #ff364125;
+  --l4: #ff532614;
+  --l5: #ff451362;
+  --l6: #ff246531;
+}
+
+
+/* color dropdown menu */
+
+.colorDropdown {
+  background-color: #fffafa;
+  border: solid #d2d2d2;
+  border-width: 4px;
+  width: 200px;
+  font-family: monospace;
+  color: #525252;
+  border-radius: 0;
+}
+
+table {
+  margin: 40px auto;
+  white-space: nowrap;
+}
+
+td {
+  padding-right: 20px;
+}
+
+.visualsDiv {
+  padding: 5% 0 10% 0;
+}
+
+
+/* svg fills */
+
+path {stroke: none}
+.l1 {fill: var(--l1)}
+.l2 {fill: var(--l2)}
+.l3 {fill: var(--l3)}
+.l4 {fill: var(--l4)}
+.l5 {fill: var(--l5)}
+.l6 {fill: var(--l6)}
+
+/* gradients */
+stop {stop-opacity: 1}
+.l1g {stop-color: var(--l1)}
+.l2g {stop-color: var(--l2)}
+.l3g {stop-color: var(--l3)}
+.l4g {stop-color: var(--l4)}
+.l5g {stop-color: var(--l5)}
+.l6g {stop-color: var(--l6)}
+
+
+/* flowers */
+
+.flower {
+  margin: 5px;
+  height: 170px;
+  width: 170px;
+}
+
+
+/* dodecahedrons */
+
+.dodec {
+  margin: -20px;
+  height: 225px;
+  width: 225px;
+}
+
+.cube {
+  margin: 20px;
+  height: 110px;
+  width: 110px;
+}
+
+
+/* stripes */
+
+.stripehr {
+  margin: 0 15%;
+  padding: 0;
+  max-width: 70%;
+  border-top: 0.5px #fef7f7;
+}
+
+.stripep {
+  margin: 0 15%;
+  padding: 0;
+  max-width: 70%;
+  font-size: 20px;
+}
+
+.stripep.l1 {color: var(--l1); background-color: var(--l1)}
+.stripep.l2 {color: var(--l2); background-color: var(--l2)}
+.stripep.l3 {color: var(--l3); background-color: var(--l3)}
+.stripep.l4 {color: var(--l4); background-color: var(--l4)}
+.stripep.l5 {color: var(--l5); background-color: var(--l5)}
+.stripep.l6 {color: var(--l6); background-color: var(--l6)}
