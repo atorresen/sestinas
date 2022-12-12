@@ -19,6 +19,8 @@ window.onload = function() {
 function changeColor(objDropDown) {
   var color = document.getElementById("chosenColor");
 
+  console.log(objDropDown.value);
+  
   var colorFam;
   switch (objDropDown.value) {
     case "rainbow":
@@ -74,6 +76,8 @@ function changeColor(objDropDown) {
     default: //multi light
       colorFam = ["#ff123456", "#ff615243", "#ff364125", "#ff532614", "#ff451362", "#ff246531"]
   };
+  
+  console.log(colorFam);
 
   // main colors
   const line1 = document.querySelectorAll(".l1");
