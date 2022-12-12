@@ -384,46 +384,52 @@
   <hr>
 
   <p class="about">
-    These images (a flower and a stellated dodecahedron) are each created with 6 colors, each of which correspond to an end-word of a sestina.
+    These images (a flower and a stellated dodecahedron) are each created with 6 colors, each of which correspond to an end word of a sestina.
     The arrangement of the colors in each image matches the arrangement of sestina end words.
-    For example, the first and second stanzas of a sestina end with the words 1-2-3-4-5-6 and 6-1-5-2-4-3, respecitvely.
+    For example, the first and second stanzas of a sestina end with the words 1-2-3-4-5-6 and 6-1-5-2-4-3, respectively.
     This permutation of the digits 1-6 matches the permutation of colors of the petals in the first and second flowers (and similary for visible faces of the dodecahedron):
   </p>
 
   <br>
 
-  <svg class="flower" viewBox="0 0 200 200">
+  <svg class="flower" viewBox="0 0 210 200">
     <path class="l1" d="M100,100 	q50,-25 	100,0 		q-50,25 	-100,0"></path>
-    <text class="svglbl" x="150" y="105" text-anchor="middle">1</text>
     <path class="l2" d="M100,100 	q46.7,-30.8	50,-86.6 	q-46.7,30.8 	-50,86.6"/>
-    <text class="svglbl" x="125" y="60" text-anchor="middle">2</text>
     <path class="l3" d="M100,100 	q-46.7,-30.8	-50,-86.6 	q46.7,30.8 	50,86.6"/>
-    <text class="svglbl" x="75" y="60" text-anchor="middle">3</text>
     <path class="l4" d="M100,100 	q-50,25 	-100,0 		q50,-25 	100,0"/>
-    <text class="svglbl" x="50" y="105" text-anchor="middle">4</text>
     <path class="l5" d="M100,100 	q-46.7,30.8	-50,86.6	q46.7,-30.8 	50,-86.6"/>
-    <text class="svglbl" x="125" y="150" text-anchor="middle">5</text>
     <path class="l6" d="M100,100 	q46.7,30.8	50,86.6 	q-46.7,-30.8 	-50,-86.6"/>
-    <text class="svglbl" x="75" y="150" text-anchor="middle">6</text>
+    <text class="svglbl" x="150" y="105" dy="2" text-anchor="middle">1</text>
+    <text class="svglbl" x="125" y="60" dx="2" text-anchor="middle">2</text>
+    <text class="svglbl" x="75" y="60" dx="-2" text-anchor="middle">3</text>
+    <text class="svglbl" x="50" y="105" dy="2" text-anchor="middle">4</text>
+    <text class="svglbl" x="75" y="150" dx="2" text-anchor="middle">5</text>
+    <text class="svglbl" x="125" y="150" dx="-2" text-anchor="middle">6</text>
+    <circle cx="196" cy="100" r="4" fill="red"/>
+    <path fill="none" stroke="red" stroke-width="2%" d="M 196 100 A 100 100 0 0 0 175 40"/>
+    <polygon points="169,30 183,40 170,45" fill="red"/>
   </svg>
 
-  <svg class="flower" viewBox="0 0 200 200">
+  <svg class="flower" viewBox="0 0 210 200">
     <path class="l6" d="M100,100 	q50,-25 	100,0 		q-50,25 	-100,0"></path>
-    <text class="svglbl" x="150" y="105" text-anchor="middle">6</text>
     <path class="l1" d="M100,100 	q46.7,-30.8	50,-86.6 	q-46.7,30.8 	-50,86.6"/>
-    <text class="svglbl" x="125" y="60" text-anchor="middle">1</text>
     <path class="l5" d="M100,100 	q-46.7,-30.8	-50,-86.6 	q46.7,30.8 	50,86.6"/>
-    <text class="svglbl" x="75" y="60" text-anchor="middle">5</text>
     <path class="l2" d="M100,100 	q-50,25 	-100,0 		q50,-25 	100,0"/>
-    <text class="svglbl" x="50" y="105" text-anchor="middle">2</text>
-    <path class="l3" d="M100,100 	q-46.7,30.8	-50,86.6	q46.7,-30.8 	50,-86.6"/>
-    <text class="svglbl" x="125" y="150" text-anchor="middle">4</text>
-    <path class="l4" d="M100,100 	q46.7,30.8	50,86.6 	q-46.7,-30.8 	-50,-86.6"/>
-    <text class="svglbl" x="75" y="150" text-anchor="middle">3</text>
+    <path class="l4" d="M100,100 	q-46.7,30.8	-50,86.6	q46.7,-30.8 	50,-86.6"/>
+    <path class="l3" d="M100,100 	q46.7,30.8	50,86.6 	q-46.7,-30.8 	-50,-86.6"/>
+    <text class="svglbl" x="150" y="105" dy="2" text-anchor="middle">6</text>
+    <text class="svglbl" x="125" y="60" dx="2" text-anchor="middle">1</text>
+    <text class="svglbl" x="75" y="60" dx="-2" text-anchor="middle">5</text>
+    <text class="svglbl" x="50" y="105" dy="2" text-anchor="middle">2</text>
+    <text class="svglbl" x="75" y="150" dx="2" text-anchor="middle">4</text>
+    <text class="svglbl" x="125" y="150" dx="-2" text-anchor="middle">3</text>
+    <circle cx="196" cy="100" r="4" fill="red"/>
+    <path fill="none" stroke="red" stroke-width="2%" d="M 196 100 A 100 100 0 0 0 175 40"/>
+    <polygon points="169,30 183,40 170,45" fill="red"/>
   </svg>
 
   <p class="about">
-    The color families are created by using the line indices as the characters of hex color names. For example, the "multi dark" color family corresponds to the hex color codes
+    The color families are created by using the end word indices as the characters of hex color codes. For example, the "multi dark" color family corresponds to the hex color codes
   </p>
   <p>
     <span style="padding: 0 5px; color: white; background-color: #123456">#123456</span>,
