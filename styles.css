@@ -136,7 +136,6 @@ td {
 
 /* svg fills */
 
-path {stroke: none}
 .l1 {fill: var(--l1)}
 .l2 {fill: var(--l2)}
 .l3 {fill: var(--l3)}
