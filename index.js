@@ -21,6 +21,10 @@ function changeColor(objDropDown) {
 
   var colorFam;
   switch (objDropDown.value) {
+    case "rainbow":
+      colorFam = ["red", "orange", "yellow", "green", "blue", "purple"];
+      break;
+    
     case "red":
       colorFam = ["#a23456", "#f15243", "#c64125", "#e32614", "#d51362", "#b46531"];
       break;
