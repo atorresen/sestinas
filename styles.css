@@ -199,3 +199,44 @@ stop {stop-opacity: 1}
 .stripep.l4 {color: var(--l4); background-color: var(--l4)}
 .stripep.l5 {color: var(--l5); background-color: var(--l5)}
 .stripep.l6 {color: var(--l6); background-color: var(--l6)}
+
+/********** smaller screens **********/
+
+@media (max-width: 757px) {
+  .about {
+    margin: 5% 8% 0 8%
+  }
+
+  #sestina_system {
+    width: 90%
+  }
+
+  .flower:not(div.visualsDiv svg, div.visualExample svg)   {
+    height: 70%;
+    width: 70%;
+  }
+
+  .dodec:not(div.visualsDiv svg, div.visualExample svg)   {
+    height: 80%;
+    width: 80%;
+  }
+
+  .cube:not(div.visualsDiv svg, div.visualExample svg)   {
+    height: 50%;
+    width: 50%;
+  }
+}
+
+/* line breaks */
+
+@media (min-width: 1306px) {
+  .hidden-ms {
+    display: none !important;
+  }
+}
+
+@media (min-width: 757px) {
+  .hidden-ss {
+    display: none !important;
+  }
+}
