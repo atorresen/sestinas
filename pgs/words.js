@@ -12,22 +12,22 @@ function showWordColors() {
     const word6 = document.querySelectorAll(".w6");
 
     word1.forEach(word => {
-      word.style.backgroundColor = "#ff123456"
+      word.style.backgroundColor = "#bff"
     });
     word2.forEach(word => {
-      word.style.backgroundColor = "#ff615243"
+      word.style.backgroundColor = "#bbf"
     });
     word3.forEach(word => {
-      word.style.backgroundColor = "#ff364125"
+      word.style.backgroundColor = "#fbf"
     });
     word4.forEach(word => {
-      word.style.backgroundColor = "#ff532614"
+      word.style.backgroundColor = "#fbb"
     });
     word5.forEach(word => {
-      word.style.backgroundColor = "#ff451362"
+      word.style.backgroundColor = "#ffb"
     });
     word6.forEach(word => {
-      word.style.backgroundColor = "#ff246531"
+      word.style.backgroundColor = "#bfb"
     });
   } else {
     const endwords = document.querySelectorAll(".endWord");
