@@ -93,6 +93,20 @@ button:hover {
   cursor: pointer;
 }
 
+/* checkbox */
+input[type="checkbox"] {
+    accent-color: #a2a2a2;
+    position: relative;
+    vertical-align: middle;
+}
+
+label {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: monospace;
+    color: #a2a2a2;
+}
 
 /********** visualizations **********/
 
