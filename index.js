@@ -4,22 +4,27 @@ window.onload = function() {
   console.log(select);
 }
 
-// color one face (line1) in the color selected in the dropdown
-// function changeColor(objDropDown) {
-//     var color = document.getElementById("chosenColor");
-//     color.value = objDropDown.value;
-//
-//     const line1 = document.querySelectorAll(".l1");
-//
-//     line1.forEach(box => {
-//       box.style.fill = color.value;
-//     });
-// }
+
+const browserName = window.navigator.userAgent.toLowerCase();
+var browserAlert = true;
+
 
 function changeColor(objDropDown) {
   var color = document.getElementById("chosenColor");
 
   console.log(objDropDown.value);
+  console.log(navigator.appName);
+  
+  if (browserAlert && !browserName.includes("chrome"))
+    {
+      alert("Note: the visual display looks best in Google Chrome");
+    };
+
+  browserAlert = false;
+  console.log(browserAlert);
+
+  browserAlert = false;
+  console.log(browserAlert);
   
   var colorFam;
   switch (objDropDown.value) {
